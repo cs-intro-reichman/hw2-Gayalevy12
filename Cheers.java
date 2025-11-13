@@ -15,14 +15,14 @@ public class Cheers {
                 {
                         if (spelling.indexOf(Name.charAt(i))== -1)
                         {
-                                System.out.println(" Give me a " + Name.charAt(i) + " : " + Name.charAt(i) + "!");
+                                System.out.println("Give me a" + Name.charAt(i) + ":" + Name.charAt(i) + "!");
                         }
                         else
-                        System.out.println(" Give me an " + Name.charAt(i) + " : " + Name.charAt(i) + "!");
+                        System.out.println("Give me an" + Name.charAt(i) + ":" + Name.charAt(i) + "!");
                 
                         
                 }
-                System.out.println("What dous thet spell?");
+                System.out.println("What does thet spell?");
                 for(int j = 0; j<number; j++)
                 {
                         System.out.printf(Name + "!!!" + "\n");
