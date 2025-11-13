@@ -20,7 +20,7 @@ public class Cheers {
                 System.out.println("Give me a  " + currentLetter + ": " + currentLetter + "!");
             }
             else
-            System.out.println("Give me an" + currentLetter + ": " + currentLetter + "!");
+            System.out.println("Give me an " + currentLetter + ": " + currentLetter + "!");
         }
         System.out.println("What does that spell?");
         for(int j = 0; j < Number; j++)
