@@ -3,14 +3,7 @@ public class TimeCalc {
         // Replace this comment with your code
          int hours = Integer.parseInt("" + args[0].charAt(0) + args[0].charAt(1));
          int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
-         if (minutes==00)
-         {
-             System.out.println(hours + ":00");
-         }  
-         else
-         System.out.println(hours + ":" + minutes);
          int minutesToAdd = Integer.parseInt(args[1]); 
-         System.out.println(minutesToAdd);
          int totalminutes = (hours)*60 + minutes +minutesToAdd;
          int totalhours = totalminutes/60;
          int Newhours = totalhours % 24;

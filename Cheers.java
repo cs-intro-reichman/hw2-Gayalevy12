@@ -8,8 +8,8 @@ Great work boaz!
 // Prints a crowd cheering output.
 public class Cheers {
         public static void main(String[] args) {
-                int number = Integer.parseInt(args[0]);
-                String Name = args[1];
+                String Name = args[0];
+                int number = Integer.parseInt(args[1]);
                 String spelling = "AEFHILMNORSX";
                 for (int i=0; i<Name.length(); i++)
                 {
