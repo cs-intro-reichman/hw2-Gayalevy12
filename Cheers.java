@@ -8,25 +8,26 @@ Great work boaz!
 // Prints a crowd cheering output.
 public class Cheers {
         public static void main(String[] args) {
-                String Name = args[0];
-                int number = Integer.parseInt(args[1]);
-                String spelling = "AEFHILMNORSX";
-                for (int i=0; i<Name.length(); i++)
-                {
-                        if (spelling.indexOf(Name.charAt(i))== -1)
-                        {
-                                System.out.println("Give me a" + Name.charAt(i) + ":" + Name.charAt(i) + "!");
-                        }
-                        else
-                        System.out.println("Give me an" + Name.charAt(i) + ":" + Name.charAt(i) + "!");
-                
-                        
-                }
-                System.out.println("What does thet spell?");
-                for(int j = 0; j<number; j++)
-                {
-                        System.out.printf(Name + "!!!" + "\n");
-                }
-	    // Replace this comment with your code
+        String Name = args[0];
+        int Number = Integer.parseInt(args[1]);
+        String Spelling = "AEFHILMNORSX"; 
+        for (int i=0; i < Name.length(); i++)
+        {
+            char currentLetter = Character.toUpperCase(Name.charAt(i));
+            
+            if (Spelling.indexOf(currentLetter) == -1)
+            {
+                System.out.println("Give me a  " + currentLetter + ":" + currentLetter + "!");
+            }
+            else
+            System.out.println("Give me an " + currentLetter + ":" + currentLetter + "!");
+        }
+        System.out.println("What does that spell?");
+        for(int j = 0; j < Number; j++)
+        {
+            System.out.printf(Name.toUpperCase() + "!!!" + "\n");
         }
 }
+}
+
+      
