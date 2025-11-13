@@ -2,5 +2,21 @@
 public  class  TestRandom {
 	public static void main(String[]  args) {
 	    // Replace this comment with your code
-	}
+		int N = Integer.parseInt(args[0]);
+        int countBig = 0;
+        int countSmall = 0;
+		for (int i=0; i<N; i++)
+		{
+			double r = Math.random();
+			if (r > 0.5)
+			countBig++;
+			else
+			countSmall++;
+		}
+		     double ratioValue = (double) countBig / countSmall;
+			 System.out.println("> 0.5: " + countBig + " times");
+			 System.out.println("<= 0.5: " + countSmall + " times");
+			 if (! (countBig==0 || countSmall==0))
+			 System.out.println(ratioValue);
+        }
 }
